@@ -7,6 +7,8 @@ public class SavedRequestDTO {
     private String url;
     private String headers;
     private String body;
+    private Long projectId;
+    private Integer expectedStatus;
 
     public String getName() {
         return name;
@@ -47,4 +49,21 @@ public class SavedRequestDTO {
     public void setBody(String body) {
         this.body = body;
     }
+
+    public Long getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(Long projectId) {
+        this.projectId = projectId;
+    }
+
+    public Integer getExpectedStatus() {
+        return expectedStatus;
+    }
+
+    public void setExpectedStatus(Integer expectedStatus) {
+        this.expectedStatus = expectedStatus;
+    }
+
 }
