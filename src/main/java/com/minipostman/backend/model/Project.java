@@ -9,6 +9,10 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+@JoinColumn(name = "user_id")
+private User user;
+
     private String name;
 
     public Long getId() {
@@ -21,5 +25,13 @@ public class Project {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
