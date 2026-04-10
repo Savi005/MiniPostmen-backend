@@ -19,7 +19,7 @@ public class SavedRequestService {
 
     private final SavedRequestRepository repository;
     private final ProjectRepository projectRepository;
-    private final ProjectService projectService; // ← ADD THIS
+    private final ProjectService projectService;
     private final ApiTestingService apiTestingService;
 
     public SavedRequestService(
